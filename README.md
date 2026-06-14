@@ -37,7 +37,23 @@ Ce projet fait partie de mon portfolio de Data Engineering. L'objectif est de co
    cd fastway
 
    pip install -r requirements.txt
-
    python extract_velib.py
 
-   
+Créer et activer l'environnement virtuel :
+
+Bash
+python -m venv .venv
+# Sur Windows:
+.venv\Scripts\activate
+# Sur Mac/Linux:
+source .venv/bin/activate
+Installer les dépendances :
+
+Bash
+pip install -r requirements.txt
+Exécuter l'extraction
+Pour tester la récupération des données Vélib en local :
+
+Bash
+python extract_velib.py
+Les fichiers seront sauvegardés dans le dossier data/raw/.
