@@ -1,6 +1,12 @@
 .venv/
+venv/
 __pycache__/
 *.pyc
 data/raw/
 .env
 gcp-key.json
+
+# Dossiers dbt
+fastway_transform/target/
+fastway_transform/dbt_packages/
+fastway_transform/logs/

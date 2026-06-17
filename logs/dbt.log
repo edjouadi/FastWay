@@ -1,0 +1,29 @@
+[0m15:36:38.827015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB51702F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB51659290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB5173F450>]}
+
+
+============================== 15:36:38.856426 | d41b1798-e724-487a-8077-2be083ea301c ==============================
+[0m15:36:38.856426 [info ] [MainThread]: Running with dbt=1.11.11
+[0m15:36:38.858511 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\elias\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt init fastway_transform', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m15:36:39.242218 [debug] [MainThread]: Starter project path: C:\Users\elias\Downloads\fastway\venv\Lib\site-packages\dbt\include\starter_project
+[0m15:36:39.411714 [info ] [MainThread]: 
+Your new dbt project "fastway_transform" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:36:39.413509 [info ] [MainThread]: Setting up your profile.
+[0m15:38:24.108310 [info ] [MainThread]: Profile fastway_transform written to C:\Users\elias\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:38:24.119023 [debug] [MainThread]: Command `dbt init` succeeded at 15:38:24.117702 after 105.56 seconds
+[0m15:38:24.120860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB51659010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB51646D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB516F73D0>]}
+[0m15:38:24.121801 [debug] [MainThread]: Flushing usage events
+[0m15:38:25.969155 [debug] [MainThread]: An error was encountered while trying to flush usage events

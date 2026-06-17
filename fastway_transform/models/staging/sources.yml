@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: velib_raw
+    database: responsive-seat-422016
+    schema: velib_raw
+    tables:
+      - name: external_station_information
+        description: "Données structurelles fixes des stations Vélib (Nom, capacité, géolocalisation)"
+      - name: external_station_status
+        description: "Données dynamiques en temps réel des stations (Vélos disponibles, bornes libres)"

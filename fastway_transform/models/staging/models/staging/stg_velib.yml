@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: stg_velib__information
+    description: "Table contenant les informations statiques des stations Vélib de Paris."
+    columns:
+      - name: station_id
+        description: "Identifiant unique de la station Vélib."
+      - name: station_name
+        description: "Nom public de la station (ex: Benjamin Godard - Victor Hugo)."
+      - name: capacity
+        description: "Nombre total de points d'attache (bornes) de la station."
+      - name: latitude
+        description: "Coordonnée GPS (Latitude) de la station."
+      - name: longitude
+        description: "Coordonnée GPS (Longitude) de la station."
+
+  - name: stg_velib__status
+    description: "Table contenant le statut en temps réel des vélos et bornes disponibles."
+    columns:
+      - name: station_id
+        description: "Identifiant unique de la station Vélib."
+      - name: bikes_available
+        description: "Nombre total de vélos (mécaniques et électriques) actuellement disponibles."
+      - name: docks_available
+        description: "Nombre de bornes libres pour y accrocher un vélo."
+      - name: is_installed
+        description: "Indique si la station est installée (1 = oui, 0 = non)."
+      - name: is_renting
+        description: "Indique si la station autorise la location (1 = oui, 0 = non)."
+      - name: is_returning
+        description: "Indique si on peut restituer un vélo à cette station (1 = oui, 0 = non)."
+      - name: last_reported_at
+        description: "Date et heure de la dernière mise à jour du statut par l'API."
